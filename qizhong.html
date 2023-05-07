@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>乱点鸳鸯谱</title>
+  <h1 style = 'width:15%;margin:auto;color:red'>请选择你最想磕的两个人</h1>
+  <h2 style = 'width:15%;margin:auto;color:red'>但请记住</h2>
+  <h3 style = 'width:15%;margin:auto;color:red'>什么都磕只会害了你！</h3>
+  <style>
+    body{
+      background-image:url("alldz0b1ou1alldz0b1ou1.jpeg");
+      background-repeat:no-repeat;
+    }
+  </style>
+  <script>
+    function goToPage() {
+      var option1 = document.getElementById("option1").value;
+      var option2 = document.getElementById("option2").value;
+      var url;
+
+      if (option1 === "A" && option2 === "X") {
+        url = "https://www.bilibili.com/video/BV1ke4y1h7U9/?spm_id_from=333.337.search-card.all.click";
+      } else if (option1 === "A" && option2 === "Y") {
+        url = "https://www.bilibili.com/video/BV1dK411q71Z/?spm_id_from=333.337.search-card.all.click";
+      } else if (option1 === "B" && option2 === "X") {
+        url = "https://www.bilibili.com/video/BV1n3411t76S/?spm_id_from=333.337.search-card.all.click";
+      } else if (option1 === "B" && option2 === "Y") {
+        url = "https://www.bilibili.com/video/BV1FY411P7Au/?spm_id_from=333.337.search-card.all.click";
+      }
+
+      window.location.href = url;
+    }
+  </script>
+</head>
+<body>
+  <div style = 'width:15%;margin:auto;'>
+    <select id="option1">
+      <option value="A">华妃</option>
+      <option value="B">四郎</option>
+    </select>
+
+    <select id="option2">
+      <option value="X">八戒</option>
+      <option value="Y">悟空</option>
+    </select>
+
+    <button onclick="goToPage()">我磕</button>
+  </div>
+</body>
+</html>
